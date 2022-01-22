@@ -20,7 +20,7 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = HomeFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -30,6 +30,7 @@ class MainFragment : Fragment() {
 
         val adapter = ViewPagerFragmentStateAdapter(requireActivity())
         binding.viewPager.adapter = adapter
+        binding.toolbarHome.title = "Харьков"
         val pageList = mutableListOf<String>()
         pageList.add("Page 1")
         pageList.add("Page 2")

@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_baseline_location_city_24.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_cloud.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_fog.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_light_rain.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_light_snow.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_max_temp.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_min_temp.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_na.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/drawable/ic_sun.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/layout/fragment_view_pager.xml" value="0.264" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/layout/home_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/layout/item_hourly.xml" value="0.6" />
+        <entry key="..\:/Users/danii/Desktop/ITOMYCH-P/app/src/main/res/layout/settings_fragment.xml" value="0.264" />
         <entry key="..\:/Users/danii/Desktop/ITOMYCH/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/danii/Desktop/ITOMYCH/app/src/main/res/layout/fragment_view_pager.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/danii/Desktop/ITOMYCH/app/src/main/res/layout/home_fragment.xml" value="0.27447916666666666" />
