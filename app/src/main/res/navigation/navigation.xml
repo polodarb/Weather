@@ -2,21 +2,33 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_navigation"
+    android:id="@+id/navigation"
     app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.pdb.weather.fragment.MainFragment"
-        android:label="Home" >
+        android:label="MainFragment" >
         <action
-            android:id="@+id/action_mainFragment_to_settingsFragment"
+            android:id="@+id/toCityFragment"
+            app:destination="@id/cityFragment" />
+        <action
+            android:id="@+id/toSettingsFragment"
             app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.pdb.weather.CityFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_city" >
+        <action
+            android:id="@+id/action_cityFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.pdb.weather.SettingsFragment"
-        android:label="Settings"
+        android:label="settings_fragment"
         tools:layout="@layout/settings_fragment" >
         <action
             android:id="@+id/action_settingsFragment_to_mainFragment"

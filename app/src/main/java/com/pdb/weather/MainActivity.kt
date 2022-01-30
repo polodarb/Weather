@@ -2,9 +2,10 @@ package com.pdb.weather
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager2.widget.ViewPager2
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.pdb.weather.databinding.ActivityMainBinding
-import com.pdb.weather.fragment.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,9 +16,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager.beginTransaction()
-            .replace(binding.fragmentMain.id, MainFragment())
-            .addToBackStack(null)
-            .commit()
+        Decompress("city.list.json.gz", "src/main/assets/city.list.json.zip")
+
+//        setupActionBarWithNavController(findNavController(R.id.fragmentContainerView))
+//        val navHostFragment = supportFragmentManager
+//            .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+//        val navController = navHostFragment.navController
+//    }
+
+//    override fun onSupportNavigateUp(): Boolean {
+//        val navController = findNavController(R.id.fragment_main)
+//        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

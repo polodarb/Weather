@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="feels_like">Ощущается как %s</string>
+    <string name="hourly_forecast">Почасовой прогноз</string>
+    <string name="daily_forecast">Дневной прогноз</string>
+    <string name="more_information">Подробнее</string>
+    <string name="wind">Ветер</string>
+    <string name="uv_index">УФ-индекс</string>
+    <string name="humidity">Влажность</string>
+    <string name="clouds">Облачность</string>
+    <string name="wind_unit">км/ч</string>
+    <string name="visibility">Видимость</string>
+    <string name="pressure_unit">мПа</string>
+    <string name="visibility_unit">км</string>
+    <string name="sunset">Закат</string>
+    <string name="sunrise">Восход</string>
+    <string name="uvi">Низкий</string>
+</resources>

@@ -10,7 +10,7 @@ class ViewPagerFragmentStateAdapter(
     activity: FragmentActivity
 ) : FragmentStateAdapter(activity) {
 
-    private var list = mutableListOf<String>()
+    private var list = mutableListOf<Pair<String, String>>()
 
     override fun getItemCount(): Int {
         return list.size
@@ -19,12 +19,13 @@ class ViewPagerFragmentStateAdapter(
     override fun createFragment(position: Int): Fragment {
         return PagerFragment().apply {
             arguments = Bundle().apply {
-                putString("title", list[position])
+                putString("lat", list[position].first)
+                putString("lon", list[position].second)
             }
         }
     }
 
-    fun setData(list: MutableList<String>) {
+    fun setData(list: MutableList<Pair<String, String>>) {
         this.list = list
     }
 }
