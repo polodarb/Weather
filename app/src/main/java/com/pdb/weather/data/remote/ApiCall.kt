@@ -1,7 +1,7 @@
-package com.pdb.test_weather.data.remote
+package com.pdb.weather.data.remote
 
-import com.pdb.test_weather.data.model.OnecallWeatherResponse
-import com.pdb.test_weather.data.model.WeatherResponse
+import com.pdb.weather.data.model.OneCallWeatherModel
+import com.pdb.weather.data.model.WeatherResponse
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -22,7 +22,7 @@ interface ApiCall {
         @Query("exclude") exclude: String = "alerts",
         @Query("appid") appid: String = API_KEY,
         @Query("lang") lang: String = "ru"
-    ): Call<OnecallWeatherResponse>
+    ): Call<OneCallWeatherModel>
 
     @GET("data/2.5/weather")
     fun getCity(

@@ -1,22 +1,17 @@
 package com.pdb.weather.fragment
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.pdb.test_weather.data.model.OnecallWeatherResponse
-import com.pdb.test_weather.data.model.WeatherResponse
-import com.pdb.test_weather.data.remote.RetrofitInstance
+import com.pdb.weather.data.remote.RetrofitInstance
 //import com.pdb.weather.recycler.DailyAdapter
-import com.pdb.test_weather.ui.recycler.HourlyAdapter
+import com.pdb.weather.recycler.HourlyAdapter
 import com.pdb.weather.R
+import com.pdb.weather.data.model.OneCallWeatherModel
 import com.pdb.weather.databinding.FragmentViewPagerBinding
 import com.pdb.weather.recycler.DailyAdapter
 import retrofit2.Call
@@ -59,10 +54,10 @@ class PagerFragment : Fragment(R.layout.fragment_view_pager) {
 
     private fun setWeather(lat: String, lon: String) {
         RetrofitInstance.api.getForecast(lat = lat, lon = lon)
-            .enqueue(object : Callback<OnecallWeatherResponse> {
+            .enqueue(object : Callback<OneCallWeatherModel> {
                 override fun onResponse(
-                    call: Call<OnecallWeatherResponse>,
-                    response: Response<OnecallWeatherResponse>
+                    call: Call<OneCallWeatherModel>,
+                    response: Response<OneCallWeatherModel>
                 ) = if (response.isSuccessful) {
                     binding.tvHumidity.text = "${response.body()?.current?.humidity.toString()}%"
                     binding.tvWindSpeed.text = response.body()?.current?.wind_speed.toString()
@@ -110,7 +105,7 @@ class PagerFragment : Fragment(R.layout.fragment_view_pager) {
                     //TODO: SHOW ERROR
                 }
 
-                override fun onFailure(call: Call<OnecallWeatherResponse>, t: Throwable) {
+                override fun onFailure(call: Call<OneCallWeatherModel>, t: Throwable) {
                     Log.e("LOGGER", "$t")
                 }
             })

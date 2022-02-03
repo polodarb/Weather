@@ -11,9 +11,11 @@ import android.util.Log
 import android.view.*
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.pdb.test_weather.data.model.WeatherResponse
-import com.pdb.test_weather.data.remote.RetrofitInstance
+import com.pdb.weather.CityFragment
+import com.pdb.weather.data.model.WeatherResponse
+import com.pdb.weather.data.remote.RetrofitInstance
 import com.pdb.weather.R
 import com.pdb.weather.adapter.ViewPagerFragmentStateAdapter
 import com.pdb.weather.databinding.HomeFragmentBinding
@@ -57,12 +59,8 @@ class MainFragment : Fragment() {
         binding.toolbarHome.inflateMenu(R.menu.home_menu)
         binding.toolbarHome.setOnMenuItemClickListener {
             when (it.itemId) {
-                R.id.action_settings -> {
-                    // do something
-                    true
-                }
                 R.id.action_city -> {
-
+                    findNavController().navigate(R.id.cityFragment)
                     true
                 }
                 else -> {
@@ -71,20 +69,6 @@ class MainFragment : Fragment() {
             }
         }
     }
-//    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-//        R.id.action_settings -> {
-//            // User chose the "Settings" item, show the app settings UI...
-//            Toast.makeText(requireContext(), "Settings", Toast.LENGTH_SHORT).show()
-//            true
-//        }
-//
-//        else -> {
-//            // If we got here, the user's action was not recognized.
-//            // Invoke the superclass to handle it.
-//            super.onOptionsItemSelected(item)
-//        }
-//    }
-
 
     fun getCity(lat: String, lon: String) {
         RetrofitInstance.api.getCity(lat = lat, lon = lon)
@@ -125,7 +109,8 @@ class MainFragment : Fragment() {
             )
         }
 
-        locationManager = requireActivity().getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        locationManager =
+            requireActivity().getSystemService(Context.LOCATION_SERVICE) as LocationManager
         val hasGps = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
         val hasNetwork = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
         var locationGps = Location(LocationManager.GPS_PROVIDER)

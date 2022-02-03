@@ -1,4 +1,4 @@
-package com.pdb.weather
+package com.pdb.weather.utils
 
 import android.util.Log
 import java.io.File
@@ -14,12 +14,12 @@ class Decompress(private val zip: String, private val loc: String) {
             val fin = FileInputStream(zip)
             val zin = ZipInputStream(fin)
             var ze: ZipEntry? = null
-            while (zin.getNextEntry().also { ze = it } != null) {
-                Log.v("Decompress", "Unzipping " + ze?.getName())
-                if (ze?.isDirectory() == true) {
-                    dirChecker(ze?.getName().toString())
+            while (zin.nextEntry.also { ze = it } != null) {
+                Log.v("Decompress", "Unzipping " + ze?.name)
+                if (ze?.isDirectory == true) {
+                    dirChecker(ze?.name.toString())
                 } else {
-                    val fout = FileOutputStream(loc + ze?.getName())
+                    val fout = FileOutputStream(loc + ze?.name)
                     var c: Int = zin.read()
                     while (c != -1) {
                         fout.write(c)

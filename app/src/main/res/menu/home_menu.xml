@@ -5,10 +5,5 @@
         android:id="@+id/action_city"
         android:icon="@drawable/ic_baseline_location_city_24"
         android:title="City"
-        app:showAsAction="always"></item>
-    <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="Settings"
-        app:showAsAction="always"></item>
+        app:showAsAction="always" />
 </menu>

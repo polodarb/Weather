@@ -1,10 +1,10 @@
-package com.pdb.test_weather.ui.recycler
+package com.pdb.weather.recycler
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.pdb.test_weather.data.model.HourlyData
+import com.pdb.weather.data.model.HourlyData
 import com.pdb.weather.databinding.ItemHourlyBinding
 
 class HourlyAdapter : ListAdapter<HourlyData, HourlyViewHolder>(DIFF_CALLBACK) {

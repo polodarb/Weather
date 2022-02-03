@@ -12,9 +12,6 @@
         <action
             android:id="@+id/toCityFragment"
             app:destination="@id/cityFragment" />
-        <action
-            android:id="@+id/toSettingsFragment"
-            app:destination="@id/settingsFragment" />
     </fragment>
     <fragment
         android:id="@+id/cityFragment"
@@ -23,15 +20,6 @@
         tools:layout="@layout/fragment_city" >
         <action
             android:id="@+id/action_cityFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.pdb.weather.SettingsFragment"
-        android:label="settings_fragment"
-        tools:layout="@layout/settings_fragment" >
-        <action
-            android:id="@+id/action_settingsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

@@ -1,11 +1,8 @@
 package com.pdb.weather.recycler
 
-import android.text.SpannableStringBuilder
-import android.text.Spanned
-import android.text.style.ImageSpan
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
-import com.pdb.test_weather.data.model.DailyData
+import com.pdb.weather.data.model.DailyData
 import com.pdb.weather.R
 import com.pdb.weather.databinding.ItemDailyBinding
 import java.text.SimpleDateFormat

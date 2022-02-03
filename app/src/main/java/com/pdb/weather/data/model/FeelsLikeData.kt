@@ -1,6 +1,4 @@
-package com.pdb.test_weather.data.model
-
-import android.view.ViewDebug
+package com.pdb.weather.data.model
 
 data class FeelsLikeData(
     val day: Float,

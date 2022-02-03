@@ -8,7 +8,6 @@ import android.view.ViewGroup
 
 class SettingsFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -16,5 +15,4 @@ class SettingsFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.settings_fragment, container, false)
     }
-    
 }

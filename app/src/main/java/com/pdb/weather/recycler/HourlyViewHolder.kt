@@ -1,7 +1,7 @@
-package com.pdb.test_weather.ui.recycler
+package com.pdb.weather.recycler
 
 import androidx.recyclerview.widget.RecyclerView
-import com.pdb.test_weather.data.model.HourlyData
+import com.pdb.weather.data.model.HourlyData
 import com.pdb.weather.R
 import com.pdb.weather.databinding.ItemHourlyBinding
 import java.text.SimpleDateFormat

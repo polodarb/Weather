@@ -1,4 +1,4 @@
-package com.pdb.test_weather.data.model
+package com.pdb.weather.data.model
 
 data class WeatherConditions(
     val Rain: String = "Rain",

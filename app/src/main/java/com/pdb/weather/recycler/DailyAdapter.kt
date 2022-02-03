@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.pdb.test_weather.data.model.DailyData
+import com.pdb.weather.data.model.DailyData
 import com.pdb.weather.databinding.ItemDailyBinding
 
 class DailyAdapter : ListAdapter<DailyData, DailyViewHolder>(DIFF_CALLBACK) {
