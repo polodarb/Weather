@@ -144,7 +144,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_light_snow"
-                        app:tint="@color/tv_color"
+                        app:tint="@color/icon_bg"
                         tools:ignore="ContentDescription" />
 
                     <TextView
@@ -161,7 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:text="Snow"
+                        tools:text="Snow"
                         android:textColor="@color/tv_color"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -443,7 +443,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
                             android:text="@string/wind_unit"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/tv_color" />
                     </LinearLayout>
 
                 </LinearLayout>

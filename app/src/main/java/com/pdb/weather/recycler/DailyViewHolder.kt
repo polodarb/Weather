@@ -17,7 +17,7 @@ class DailyViewHolder(private val binding: ItemDailyBinding) :
 
         val dow = simpleDOWFormat.format(data.dt * 1000L)
 
-        binding.dailyWeekTv.text = dow
+        binding.dailyWeekTv.text = dow //TODO: Прописать логику дней недель
 
         val icon = when (data.weather[0].main) {
             "Rain" -> {

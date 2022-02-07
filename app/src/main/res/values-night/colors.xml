@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="card_bg">#1E1E1E</color>
+    <color name="card_bg">#303030</color>
     <color name="tv_color">#BFBFBF</color>
     <color name="icon_bg">#BFBFBF</color>
-    <color name="layout_bg">#000000</color>
+    <color name="layout_bg">#111111</color>
     <color name="btn_bg">#3C3C3C</color>
+    <color name="card_daily_bg">#595959</color>
 </resources>

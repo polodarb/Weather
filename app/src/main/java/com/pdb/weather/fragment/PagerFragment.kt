@@ -92,7 +92,7 @@ class PagerFragment : Fragment(R.layout.fragment_view_pager) {
                     }
 
                     binding.cardInfoIcon.setImageResource(icon)
-                    binding.tvCardState.text = "${response.body()?.daily?.get(0)?.weather?.get(0)?.main}"
+                    binding.tvCardState.text = "${response.body()?.daily?.get(0)?.weather?.get(0)?.main}" //TODO: Прописать логику состояний
                     binding.tvPressure.text = "${response.body()?.current?.pressure}"
                     binding.tvClouds.text = "${response.body()?.current?.clouds}%"
                     binding.tvVisibility.text = "${response.body()?.current?.visibility}"

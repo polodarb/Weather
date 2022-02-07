@@ -12,7 +12,7 @@
     <string name="wind_unit">км/ч</string>
     <string name="visibility">Видимость</string>
     <string name="pressure_unit">мПа</string>
-    <string name="visibility_unit">км</string>
+    <string name="visibility_unit">м</string>
     <string name="sunset">Закат</string>
     <string name="sunrise">Восход</string>
     <string name="uvi">Низкий</string>
